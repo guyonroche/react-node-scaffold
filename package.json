@@ -1,7 +1,7 @@
 {
-  "name": "quaero",
+  "name": "node-react-scaffold",
   "version": "1.0.0",
-  "description": "An FAQ project written using React and Node",
+  "description": "A basic working scaffold for React and Node",
   "main": "app.js",
   "scripts": {
     "start": "node app",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/guyonroche/quaero.git"
+    "url": "git+https://github.com/guyonroche/react-node-scaffold.git"
   },
   "keywords": [
     "faq"
@@ -23,9 +23,9 @@
   "author": "Guyon Roche",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/guyonroche/quaero/issues"
+    "url": "https://github.com/guyonroche/react-node-scaffold/issues"
   },
-  "homepage": "https://github.com/guyonroche/quaero#readme",
+  "homepage": "https://github.com/guyonroche/react-node-scaffold#readme",
   "dependencies": {
     "body-parser": "^1.15.2",
     "commander": "^2.9.0",
