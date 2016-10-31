@@ -1,14 +1,18 @@
 var path = require('path');
 
 module.exports = {
-  entry: './main.js',
+  entry: {
+    javascript: './main.js',
+    html: './index.html',
+    css: './app.css'
+  },
   output: {
     path: path.resolve(__dirname, '../public'),
-    filename: 'bundle.js'
+    filename: 'bundle.js',
   },
   devServer: {
     inline: true,
-    port: 8081
+    port: 8081,
   },
   module: {
     loaders: [
@@ -16,12 +20,13 @@ module.exports = {
         test: /\.js$/,
         loader: 'babel',
         query: {
-          presets: ['es2015', 'react']
+          presets: ['es2015', 'react'],
+          plugins: ["transform-object-rest-spread"],
         }
       },
       {
-        test: /\.html$/,
-        loader: 'file-loader'
+        test: /\.html$|\.css$/,
+        loader: 'file?name=[name].[ext]'
       }
     ]
   }
